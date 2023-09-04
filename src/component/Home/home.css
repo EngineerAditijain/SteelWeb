@@ -1,0 +1,336 @@
+/* Style for the slider container */
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* margin-left:25px; */
+}
+
+/* Style for individual slides */
+.slide {
+  height: 400px; /* Set the height of your slides */
+  display: flex;
+  width: 90%;
+  margin-left: 55px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  /* transition: transform 5s */
+}
+.slide-content:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+/* Style for slide content */
+.slide-content {
+  text-align: center;
+  color: #fff; /* Text color on the slides */
+  transition: transform 5s;
+}
+
+.contentText {
+  font-size: 60px;
+  /* margin-bottom: 70px; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+}
+/* Style for navigation buttons */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.classButton {
+  background-color: #e1b654;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: max-content;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+.classButton:hover {
+  background-color: #fff;
+  color: #e1b654;
+}
+button:hover {
+  background-color: #555;
+}
+/* Base styles for the outlined button */
+.outlined-button {
+  background-color: transparent;
+  border: 2px solid #fff; /* Border color for the outline */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none; /* Remove the default focus outline */
+}
+
+.products1 {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 5s;
+}
+.products1:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+.products2 {
+  position: relative;
+  width: 250px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 20px; /* Add margin between each product */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 5s;
+}
+.products2:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+.products3 {
+  position: relative;
+  width: 250px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 20px; /* Add margin between each product */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 5s;
+}
+.products3:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+.products4 {
+    position: relative;
+    width: 250px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 20px; /* Add margin between each product */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 5s;
+  }
+  .products4:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+.outlined-button:hover {
+  border: 2px solid #fff;
+  background-color: #fff; /* Change background color to white */
+  color: #000; /* Change text color to black */
+}
+
+.custom-card {
+  background-color: white;
+  flex: 1;
+  color: #e1b654;
+  transition: background-color 1s, color 1s, transform 1s; /* Transition for hover effect */
+}
+
+.custom-card:hover {
+  background-color: #e1b654;
+  color: white;
+  transform: translateY(-10px); /* Pop-up effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a box-shadow for elevation */
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  color: #fff;
+  padding-top: 3rem; 
+}
+/* Testimonial Container */
+.testimonial {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Testimonial Heading */
+.testimonialHeading {
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+  padding-top: 3rem; 
+}
+
+/* Testimonial Slider */
+.testimonialSlider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Testimonial Card */
+.testimonialCard {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  min-width: 400px; 
+  margin: 0 10px; 
+  text-align: center;
+}
+
+/* Testimonial Name */
+.testimonialName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Customize the text color */
+  margin-bottom: 10px;
+}
+
+/* Testimonial Text */
+.testimonialText {
+  font-size: 16px;
+  color: #555; /* Customize the text color */
+  text-align: center;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* Previous and Next Buttons */
+.prevButton,
+.nextButton {
+  background-color: #007bff; /* Customize button color */
+  color: #fff; /* Customize button text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: #0056b3; /* Customize hover color */
+}
+
+
+.one {
+  position: relative;
+  display: inline-block; /* Display as inline-block to prevent the button from taking the full width */
+  margin: 10px; /* Add margin between each product */
+}
+
+.contentText1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.product1button {
+  width: 90%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: #e1b654; /* Button background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  top: 0;
+}
+.product1button:hover {
+  background-color: #e8a50a; 
+  color: #000;/* Change background color on hover */
+}
+/* Style for the arrow buttons */
+.arrow {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: #fff;
+}
+
+/* Style for the dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: black;
+}

@@ -1,0 +1,37 @@
+/* Footer Container */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+  }
+  
+  /* Footer Content Stacks */
+  .footer .MuiStack-root {
+    display: flex;
+  }
+  
+  /* Footer Column Stacks */
+  .footer .MuiStack-root > .MuiStack-root {
+    flex: 1;
+  }
+  
+  /* Footer Typography Styles */
+  .footer .MuiTypography-root {
+    font-size: 16px;
+  }
+  
+  /* Last Section */
+  .lastSection {
+    background-color: #222; 
+    padding: 10px 0;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  /* Contact Icon and Text Styles */
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  

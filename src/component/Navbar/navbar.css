@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.hidden-nav-container {
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  left: 0;
+  /* height: 100vh; */
+  z-index: 2010;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 29px;
+  display: none;
+}
+
+.underlines {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(35, 33, 33);
+  width: 20%;
+}
+
+.underlines:after {
+  content: "";
+  /* position: absolute; */
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underlines:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  text-emphasis-color: #07a3f1;
+}
+
+#header_main {
+  background-color: #ffffff;
+  height: 120px;
+  position: relative;
+  top: 0;
+  z-index: 2999;
+
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+header {
+  background-color: antiquewhite;
+  height: 137px;
+}
+
+.headerbottom {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+}
+
+.headerbottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #e1b654;
+  transform-origin: left bottom;
+  transform: skew(45deg);
+  z-index: -1;
+}
+
+.headerbottom > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 24px;
+}
+.divider {
+  position: relative; /* Create a positioning context for the pseudo-element */
+}
+
+.divider::before {
+  content: "";
+  width: 1px; /* Adjust the width as needed */
+  height: 38px; /* Adjust the height as needed */
+  background-color: #bababa; /* Set the background color */
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 1rem;
+  top: 0;
+  left: 0;
+}
+
+/* Define the initial background color for the icon */
+.hoverIcon {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #007bff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  transition: background-position 0.3s ease-in-out;
+}
+
+/* Create the transition effect on hover */
+.hoverIcon:hover {
+  background-position: 100% 0;
+  background-image: linear-gradient(to right, #ff5722 50%, transparent 50%);
+}
+
+.search-container {
+  display: flex;
+  float: inline-end;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 6px;
+  border: none;
+  margin-top: 6px;
+  margin-right: 16px;
+  background-color: #fff;
+  color: #e1b654;
+
+  font-size: 17px;
+}
+.search-container:hover {
+  background-color: #e1b654;
+  color: #fff;
+}
+.lang-icon {
+  padding: 13px 0px;
+  margin-left: -15px;
+}
+
+/* ======= */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position it below the parent menu item */
+  left: 0;
+  list-style: none; /* Remove list bullet points */
+  margin: 0;
+  background-color: #fff; /* Background color for the submenu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  z-index: 1; /* Ensure it's above other content */
+  padding: 0;
+  
+}
+
+/* Make sure the submenu is visible when the parent li is hovered */
+li.underline-one:hover .submenu {
+  display: block;
+  width: 300px;
+  
+}
+ul.submenu li {
+  padding: 10px; /* Add some padding for better readability */
+  /* border-bottom: 1px solid #ccc;  */
+  text-align: left; /* Align text to the left */
+  font-weight: normal;
+  font-size: medium;
+  font-variant: inherit;
+}
+
+ul.submenu li a {
+  color: #333; /* Text color for submenu item links */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the entire area clickable */
+  transition: background-color 0.5s; /* Add a smooth hover effect */
+}
+ul.submenu li a:hover {
+  background-color: #e1b654;
+  height: 100%; /* Change background color on hover */
+}
+.bottomNavbar {
+  background: #f6f6f6;
+  background: linear-gradient(51deg, #fff 80%, #e1b654 20%);
+  transition: background-color 1s, color 1s;
+ 
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+.sticky {
+  transform: translateY(0%); /* Bring the navbar down to the viewport */
+  animation: slideDown 0.3s; /* Pop-up animation */
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Button.css */
+
+.my-button {
+  background-color: #fff;
+  color: #e1b654;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for both background and text color */
+}
+
+.my-button:hover {
+  background-color: #e1b654;
+  color: #fff; /* Swap text color */
+  transform: translateX(5px); /* Add a slight slide animation to the right */
+}
+
+.underline-one {
+  display: inline-block;
+  position: relative;
+  color: #e1b654;
+  font-weight: bolder;
+  font-size: large;
+}
+
+/* .underlines {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+} */
+
+.underline-one:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e1b654;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: #e1b654;
+}
+
+.underline-one:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  text-emphasis-color: #e1b654;
+  color: #e1b654;
+}
+
+.underline-one {
+  display: inline-block;
+  color: rgb(35, 33, 33);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.menu-icon {
+  display: none;
+  /* padding-right: 2px; */
+}
+
+.dropdown {
+  display: block;
+  float: left;
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .headertop > a {
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  #search-box {
+    background-color: rgb(180, 187, 246);
+    outline: none;
+    width: 140px;
+    border: none;
+  }
+
+  .underline-one {
+    display: none;
+  }
+
+  .underline-two {
+    padding: 0;
+    /* display: none; */
+    /* color: rgb(35, 33, 33);
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none; */
+  }
+
+  .dropdown {
+    display: none;
+    float: left;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hidden-nav-container {
+    display: block;
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  #search-box {
+    background-color: rgb(180, 187, 246);
+    outline: none;
+    width: 20px;
+    border: none;
+  }
+
+  .underline-one {
+    display: none;
+    color: rgb(35, 33, 33);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .underline-two {
+    /* display: none;
+		color: rgb(35, 33, 33);
+		text-align: center; */
+    padding: 0;
+    /* text-decoration: none; */
+  }
+
+  .dropdown {
+    display: none;
+    float: left;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hidden-nav-container {
+    display: block;
+    top: 60px;
+  }
+}
